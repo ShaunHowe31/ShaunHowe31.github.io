@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<style>
+ table,th,td{border: 1px solid black;}
+</style>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script language="JavaScript1.1" type="text/javascript">
+   function decodeAddr(protectedAddr, domId, textAfterHover){
+    var cleanAddr='';
+    for(i=0; i < cleanAddr.length+1; i+=2){
+      thisPiece=protectedAddr.substring(i,i+2);
+      cleanAddr=cleanAddr.concat(thisPiece.charAt(1), thisPiece.charAt(0));
+    }
+    if(textAfterHover == 'decode'){
+      textAfterHover = cleanAddr;
+    }
+    cleanAddr=textAfterHover.link('mailto:'+cleanAddr);
+    document.getElementById(domId).innerHTML=cleanAddr;
+  }
+  </script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather Links</title>
+
+
+  </head>
+  <link rel="icon" type="image/png" href="http://www.aosc.umd.edu/~showe/favicon.png"  sizes="16x16">
+  <body>
+  <div id="wrapper">
+    <div id="header"> 
+    </div>
+
+<div id="main">
+
+
+
+
+
+<!--
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	h2 {display:inline}
+</style>
+-->
+<center>
+<div class="btn-group btm-group-lg">
+  <a href="https://ShaunHowe31.github.io/index" class="btn btn-danger" role="button">Home </a>   
+  <!--
+  <a href="http://www.aosc.umd.edu/~showe/AOSC200" class="btn btn-danger" role="button">AOSC 200 Discussion </a>
+  <a href="http://www.aosc.umd.edu/~showe/AOSC201" class="btn btn-danger" role="button">AOSC 201 Lab </a>
+  <a href="http://www.aosc.umd.edu/~showe/veg" class="btn btn-danger" role="button">Vegetation</a>
+  <a href="http://www.aosc.umd.edu/~showe/IAP" class="btn btn-danger" role="button">Beijing Pollution</a>
+  -->
+  <a href="https://ShaunHowe31.github.io/wxdisc" class="btn btn-danger" role="button">AOSC 600: Wx Discussion</a>
+</div>
+</center>
+
+<h1>Useful Weather Links</h1>
+<p>
+This page was initially used for Synoptic Meteorology forecast discussions but now 
+I use this website to organize my forecasting tools. 
+</p>
+<h3>Observations</h3>
+<a href="http://www.spc.noaa.gov/obswx/maps/">SPC Upper Air Analysis</a>
+<br>
+<br>
+<a href ="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php">Surface Analysis</a>
+<br>
+<br>
+<a href="http://www.spc.noaa.gov/">SPC</a>
+<br>
+<br>
+<a href ="http://weather.cod.edu/satrad/">Satellite/Radar</a>
+<br>
+<br>
+<a href ="http://w1.weather.gov/data/obhistory/KCGS.html">DCA Obs</a>
+
+<h3>Forecast</h3>
+<table style="width:40%">
+<tr>
+<th> &nbsp; </th>
+<th><strong> Day 1 </strong></th>
+<th> Day 2 </th>
+<th> Day 3 </th>
+</tr>
+<tr>
+<th> High </th>
+<center>
+<th> &#8457;</th>
+<th> &#8457;</th>
+<th> &#8457;</th>
+</center>
+</tr>
+<tr>
+<th> Low </th>
+<th> &#8457;</th>
+<th> &#8457;</th>
+<th> &#8457; </th>
+</tr>
+<tr>
+<th> Wind Speed </th>
+<th>  kt </th>
+<th>  kt</th>
+<th>  kt</th>
+</tr>
+<tr>
+<th> Precip </th>
+<th> " </th>
+<th> " </th>
+<th> " </th>
+</tr>
+</table>
+<h3>Models</h3>
+<a href="http://www.meteor.iastate.edu/~ckarsten/bufkit/image_loader.phtml">Iowa State Meteogram</a>
+<br>
+<br>
+<a href="http://www.nws.noaa.gov/mdl/synop/products/bullform.all.php">One Stop MOS</a>
+<br>
+<br>
+<a href="https://www.tropicaltidbits.com/analysis/models/">Tropical Tidbits</a>
+<br>
+<br>
+<a href="http://proa.accuweather.com/adcbin/professional/models_index.asp?mod=ecmwfUED_rapid">ECMWF</a>
+<br>
+<br>
+<a href="http://www.microclimates.org/forecast/wxchallenge.html">USL</a>
+<br>
+<br>
+<a href="http://www.atmos.albany.edu/facstaff/btang/forecast/">Albany Wx Challenge Precip</a>
+<br>
+<br>
+<a href ="http://ensemble.ucar.edu">WRF Ensemble</a>
+<br>
+<br>
+<a href ="http://www.nhc.noaa.gov/">NHC</a>
+
+
+</div>
+</html>
