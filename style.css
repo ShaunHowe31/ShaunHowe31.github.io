@@ -104,3 +104,7 @@ a {
       text-decoration:underline;
       color: #FC0;
   } 
+
+th{
+    font-weight: normal;
+}
