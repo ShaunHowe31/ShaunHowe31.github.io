@@ -17,18 +17,17 @@
 		<h1>Eckington Air Quality Analysis</h1>
 	</header>
 	
-	<main>
+	<main>      
     </br>
-		<p>This is a website dedicated to air quality analysis for the Eckington Neighborhood in Washington, DC.</p>
-		
-		<ul>
-			<li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_daily_mean">Daily Averaged PM2.5</a> - Daily averaged PM2.5 values for 4 sensors located in Eckington. The data were corrected based on the methodology from this paper: <a href="https://amt.copernicus.org/articles/14/4617/2021/">Barkjohn et al 2021</a> </li>
-			<li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_daily_mean_robust">Daily Averaged PM2.5 (Highest Confidence)</a> - The same data as above except a 90% completness threshold was used to create the daily average.</li>
-            <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_hourly_climatology_robust">Hourly PM2.5 Climatology (Highest Confidence)</a> - Hourly aggregated climatology of PM2.5 using 90% confidence filtering. These plots show how PM2.5 values increase around rush hour.</li>
-            
-            <h2>Air Quality Standard Exceedances</h2>
-                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_who_exceedances.html">WHO PM2.5 Standard Hourly Exceedances</a> - The daily sum of hours exceeding the WHO PM2.5 stanard of 25 µg/m³.</li>
-                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_epa_exceedances.html">EPA PM2.5 Standard Hourly Exceedances</a> - The daily sum of hours exceeding the EPA PM2.5 stanard of 35 µg/m³.</li>
+		<p>This is a website dedicated to air quality analysis for 4 <a href="https://www2.purpleair.com/">PurpleAir</a> air pollution sensors located in the Eckington Neighborhood in Washington, DC. The PurpleAir sensors are low-cost pollution monitoring devices. Because these are low-cost sensors, it is necessary to correct the data coming from the sensors. The data used in the analysis below were corrected based on the methodology developed by scientists at the Environemtnal Protection Agency (EPA) (<a href="https://amt.copernicus.org/articles/14/4617/2021/">Barkjohn et al 2021</a>).
+        After the data are corrected, they are aggregated into hourly and daily averages. Figures labeled "Highest Confidence" mean that a threshold of 90% was required for an average to be taken. This means that for an hourly average, 54 minutes of data were required to create an hourly average and for a daily average 21.6 hours of data are reuiqred to create a daily average.
+        </p>
+        
+        <h2>Air Quality Standard Exceedances</h2>
+        <p>Hourly air quality analysis shows the short-term fluctuation in air pollution.</p>
+            <ul>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_who_exceedances.html">WHO PM2.5 Standard Hourly Exceedances (Highest Confidence)</a> - The daily sum of hours exceeding the World Health Organization (WHO) PM2.5 stanard of 25 µg/m³.</li>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_epa_exceedances.html">EPA PM2.5 Standard Hourly Exceedances (Highest Confidence)</a> - The daily sum of hours exceeding the EPA PM2.5 stanard of 35 µg/m³.</li>
                 </br>
                 <center>
                     <table style="width:40%; border: 1px solid #000000" rules="all">
@@ -56,14 +55,39 @@
                     <th>0 hours</th>
                     </tr>
                     </table>
-                </center>
-		</ul>
+            </ul>
 		
-<!--<p>Here's another paragraph of text.</p> -->
+            <h2> Air Quality Averages </h2>
+            
+            <ul>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_daily_mean">Daily Averaged PM2.5</a> - Daily averaged PM2.5 values. </li>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_daily_mean_robust">Daily Averaged PM2.5 (Highest Confidence)</a> - The same data as above except a 90% completness threshold was used to create the daily average.</li>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_hourly_climatology_robust">Hourly PM2.5 Climatology (Highest Confidence)</a> - Hourly aggregated climatology of PM2.5 using 90% confidence filtering. These plots show how PM2.5 values increase around rush hour.</li>
+            </ul>
+            <h2>Current Air Quality</h2>
+    
+                <div class="row">
+                    <div class="column" id='PurpleAirWidget_144020_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+                        <script src='https://www.purpleair.com/pa.widget.js?key=HTMDKJDJJEE37BHS&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_144020_module_AQI_conversion_C0_average_10_layer_standard'></script>                    
+                    
+                    <div class="column" id='PurpleAirWidget_156089_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+                        <script src='https://www.purpleair.com/pa.widget.js?key=YZDJDIQX6T4K2Q31&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_156089_module_AQI_conversion_C0_average_10_layer_standard'></script>
+                    
+                    
+                    <div class="column" id='PurpleAirWidget_156193_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+                        <script src='https://www.purpleair.com/pa.widget.js?key=UJUFVWVD2X1IY8VS&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_156193_module_AQI_conversion_C0_average_10_layer_standard'></script>
+
+                    <div class="column" id='PurpleAirWidget_156301_module_AQI_conversion_C0_average_10_layer_standard'>Loading PurpleAir Widget...</div>
+                        <script src='https://www.purpleair.com/pa.widget.js?key=L0A97K3TPVL15KSB&module=AQI&conversion=C0&average=10&layer=standard&container=PurpleAirWidget_156301_module_AQI_conversion_C0_average_10_layer_standard'></script>
+                </div>
+
+            </center>
+		      
+		
 	</main>
 	
 	<footer>
-		<!-- <p>&copy; 2023 My Simple Webpage</p> -->
+		<p>&copy; 2023 Developed by Shaun Howe</p>
 	</footer>
 </body>
 </html>
