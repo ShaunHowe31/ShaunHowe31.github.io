@@ -26,17 +26,33 @@
             
         </br>
         </br>
-        We performed a sensor co-location analysis with DC Department of Energy and Environment (DC DOEE) to compare the Purple Air data to a high quality research-grade instrument. Some preliminary analysis is here: 
+        <h2>PurpleAir Sensor Co-Location with DC DOEE</h2>
+        We performed a sensor co-location analysis with DC Department of Energy and Environment (DC DOEE) to compare the PurpleAir data to a high quality research-grade instrument. Some initial results are shown in the following links. Here is where you will find the raw data from the 4 PurpleAir sensors are plotted against the DC DOEE sensor (note that the 4th St NE sensor still needs to be added to the plots): 
         </br>
-        <a href="https://ShaunHowe31.github.io/dc_aq/colocation_analysis.html">DC DOEE Sensor Co-location</a>     
-
+        <a href="https://ShaunHowe31.github.io/dc_aq/colocation_analysis.html">DC DOEE Sensor Co-location - Raw Data</a>
+        </br>
+        </br>
+        Here is the same plot as above except the data is corrected using the Barkjohn et al 2021 data correction:
+        </br>
+        <a href="https://ShaunHowe31.github.io/dc_aq/colocation_analysis_corrected.html">DC DOEE Sensor Co-location - Barkjohn Corrected</a>
         </p>
         
-        <h2>Air Quality Standard Exceedances</h2>
-        <p>Hourly air quality analysis shows the short-term fluctuation in air pollution.</p>
+
+		
+    <h2> Air Quality Averages </h2>
+        <p>Daily and yearly averages as the typical standards set by the EPA as defined by the <a href="https://www.epa.gov/criteria-air-pollutants/naaqs-table">National Ambient Air Quality Standards (NAAQS)</a>. </p>
+            
             <ul>
-                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_who_exceedances.html">WHO PM2.5 Standard Hourly Exceedances (Highest Confidence)</a> - The daily sum of hours exceeding the World Health Organization (WHO) PM2.5 stanard of 25 µg/m³.</li>
-                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_epa_exceedances.html">EPA PM2.5 Standard Hourly Exceedances (Highest Confidence)</a> - The daily sum of hours exceeding the EPA PM2.5 stanard of 35 µg/m³.</li>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_daily_mean_robust">Daily Averaged PM2.5 (Barkjohn Correction)</a> - The same data as above except a 90% completness threshold was used to create the daily average.</li>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_hourly_climatology_robust">Hourly PM2.5 Climatology (Barkjohn Correction)</a> - Hourly aggregated climatology of PM2.5 using 90% confidence filtering. These plots show how PM2.5 values increase around rush hour.</li>
+            </ul>
+
+
+    <h2>Air Quality Standard Exceedances</h2>
+        <p>Hourly air quality analysis shows the short-term fluctuation in air pollution compared to the daily EPA standard.</p>
+            <ul>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_who_exceedances.html">WHO PM2.5 Standard Hourly Exceedances (Barkjohn Correction)</a> - The daily sum of hours exceeding the World Health Organization (WHO) PM2.5 stanard of 25 µg/m³.</li>
+                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_epa_exceedances.html">EPA PM2.5 Standard Hourly Exceedances (Barkjohn Correction)</a> - The daily sum of hours exceeding the EPA PM2.5 stanard of 35 µg/m³.</li>
             </ul>
         
         <p><strong> Table updated on February 18, 2024:</strong></p>
@@ -73,13 +89,8 @@
                     </table>
             </ul>
 		
-            <h2> Air Quality Averages </h2>
-             <p>Daily and yearly averages as the typical standards set by the EPA as defined by the <a href="https://www.epa.gov/criteria-air-pollutants/naaqs-table">National Ambient Air Quality Standards (NAAQS)</a>. </p>
-            
-            <ul>
-                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_daily_mean_robust">Daily Averaged PM2.5 (Highest Confidence)</a> - The same data as above except a 90% completness threshold was used to create the daily average.</li>
-                <li><a href="https://ShaunHowe31.github.io/dc_aq/eckington_hourly_climatology_robust">Hourly PM2.5 Climatology (Highest Confidence)</a> - Hourly aggregated climatology of PM2.5 using 90% confidence filtering. These plots show how PM2.5 values increase around rush hour.</li>
-            </ul>
+
+
             <h2>Current Air Quality</h2>
     
                 <div class="row">
